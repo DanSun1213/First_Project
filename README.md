@@ -64,7 +64,7 @@ fig.update_layout(margin = dict(t=200,r=200,b=200,l=200),
 fig.show()
 ```
 
-![](/First_Project/Pictures/1.png)
+![](/Pictures/1.png)
 
 ```
 def plot_graph_edu_ranked_uni(final_df):
@@ -99,4 +99,4 @@ def plot_graph_edu_ranked_uni(final_df):
 Feel free to open issues or submit pull requests if you have any improvements or suggestions.
 
 
-[def]: /First_Project/Pictures/1.png
+[def]: /Pictures/1.png
