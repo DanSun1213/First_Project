@@ -55,7 +55,7 @@ After merging, we perform a second round of cleaning based on our analysis hypot
 
 # Exploratory Data Analysis
 ## example code
-```python
+```
 fig = px.imshow(heatmap_df.corr(), text_auto=True, aspect="auto")
 fig.update_layout(margin = dict(t=200,r=200,b=200,l=200),
     showlegend = False,
@@ -63,9 +63,10 @@ fig.update_layout(margin = dict(t=200,r=200,b=200,l=200),
     autosize = False )
 fig.show()
 ```
+
 ![](/First_Project/Pictures/1.png)
 
-```python
+```
 def plot_graph_edu_ranked_uni(final_df):
     import plotly.express as px
     
