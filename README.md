@@ -1,20 +1,21 @@
 # Project Ironhack
 
-# Collect the two dataset : University & Country Profile
+## Collect the two dataset : University & Country Profile
 
-This repository contains a Jupyter notebook that collects and processes datasets related to universities and country profiles.
+This repository contains a Jupyter notebook (main.ipynb) that collects and processes datasets related to universities and country profiles.
 
 ## Overview
 
-The notebook performs the following main tasks:
-1. **Collecting Datasets**: It collects data from various sources regarding universities and country profiles.
+The main.ipynb notebook performs the following main tasks:
+1. **Collecting Datasets**: It collects data from Kaggle.com regarding universities and country profiles.
 2. **Importing Libraries**: Necessary libraries are imported to handle data manipulation and analysis.
 3. **Cleaning the University Dataset**: The university dataset is cleaned to ensure it is ready for analysis.
+4. **Cleaning the Country Dataset**: The country dataset is cleaned to ensure it is ready for analysis.
 
 ## Notebook Contents
 
 ### Import Libraries
-The notebook starts by importing the necessary Python libraries required for data collection, cleaning, and analysis.
+The main.ipynb notebook starts by importing the necessary Python libraries required for data collection, cleaning, and analysis.
 
 ### Data Cleaning
 The datasets are cleaned to remove inconsistencies and prepare them for further analysis.
@@ -23,7 +24,7 @@ The datasets are cleaned to remove inconsistencies and prepare them for further 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your_username/your_repository.git
+    git clone https://github.com/DanSun1213/First_Project.git
     ```
 
 2. Navigate to the repository directory:
@@ -47,12 +48,9 @@ The datasets are cleaned to remove inconsistencies and prepare them for further 
 - Jupyter Notebook
 - pandas
 - numpy
-- [List any other libraries used]
+- plotly.io
+- plotly.express
 
 ## Contributing
 
 Feel free to open issues or submit pull requests if you have any improvements or suggestions.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
