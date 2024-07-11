@@ -74,6 +74,7 @@ def plot_graph_edu_ranked_uni(final_df):
     fig.show()
 
 ```
+
 ![](/First_Project/Pictures/2.png)
 
 
@@ -84,6 +85,7 @@ def plot_graph_edu_ranked_uni(final_df):
 3. Countries with higher internet penetration rates have better-ranked universities -- *Support* **
 4. Higher female participation in the labor force is associated with better university rankings in a country. -- **Not Defined**
 5. Countries with higher government expenditure on education as a percentage of GDP have more universities in the top 100 -- **Refuted**
+
 
 
 ## Requirements.txt
