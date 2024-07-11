@@ -74,7 +74,7 @@ def plot_graph_edu_ranked_uni(final_df):
     fig.show()
 
 ```
-![](/First_Project/Pictures/newplot.png)
+![](/First_Project/Pictures/2.png)
 
 
 ## Findings
