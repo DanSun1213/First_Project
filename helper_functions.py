@@ -48,3 +48,34 @@ def merge_dataset(df_2017, country_profile, key='country'):
     # key: column to merge on
     # return: merged DataFrame
     return pd.merge(df_2017, country_profile, on=key, how = 'left')
+
+
+
+def clean_data_dan(new_df, country_profile):
+    import pandas as pd
+    df_edu = new_df.copy()
+
+    student_table = df_edu[['country', 'international_students', 'rank_display', 'score', 'type', 'Population in thousands (2017)', 'Sex ratio (m per 100 f, 2017)','GDP per capita (current US$)']]
+    student_table['international_students'].replace(',', '', regex=True, inplace=True)
+    student_table['international_students'] = pd.to_numeric(student_table['international_students'], errors='coerce')
+    student_table = student_table.groupby('country').agg({'international_students': 'sum', 'score': 'mean'})
+    student_table.rename(columns={'international_students': 'total_international_students', 'score': 'average_score'}, inplace=True)
+    country_table = df_edu.groupby('country').agg({'rank_display': 'count'})
+    country_table.rename(columns={'rank_display': 'total_universities ranked in 100'}, inplace= True)
+    country_table = country_table.merge(student_table, on='country', how='inner')
+    country_table['total_international_students'] = country_table['total_international_students'].astype(int)
+    country_table['total_universities ranked in 100'] = country_table['total_universities ranked in 100'].astype(int)
+    country_table = country_table[['total_universities ranked in 100', 'total_international_students', 'average_score']]
+    country_table['average_score'] = country_table['average_score'].round(2)
+    new_country_table = merge_dataset(country_table, country_profile, key='country')
+    pd.set_option('display.max_columns', None)
+    final_df = new_country_table[['country', 'total_universities ranked in 100', 'total_international_students', 'average_score', 'Region', 'Population in thousands (2017)', 'GDP per capita (current US$)', 'Sex ratio (m per 100 f, 2017)', 'Education: Government expenditure (% of GDP)', 'Fertility rate, total (live births per woman)']]
+    final_df= final_df[(final_df['Population in thousands (2017)'] >= 0) & (final_df['Education: Government expenditure (% of GDP)'] >= 0)]
+    return final_df
+
+
+def plot_graph_edu_ranked_uni(final_df):
+    import plotly.express as px
+    
+    fig = px.scatter(final_df, x='Education: Government expenditure (% of GDP)', y='total_universities ranked in 100', color='Region', size='average_score', hover_name='country', title='Total Universities Ranked in 100 vs Total International Students')
+    fig.show()
