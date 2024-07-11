@@ -79,10 +79,10 @@ def plot_graph_edu_ranked_uni(final_df):
 
 ## Findings
 
-1. Countries with higher GDP growth rates tend to have higher-ranked universities. -- ** **
-2. Countries with a higher urban population percentage have universities that perform better in global -- ** **
-3. Countries with higher internet penetration rates have better-ranked universities -- ** **
-4. Higher female participation in the labor force is associated with better university rankings in a country. -- ** **
+1. Countries with higher GDP growth rates tend to have higher-ranked universities. -- *Support* **
+2. Countries with a higher urban population percentage have universities that perform better in global -- **Refuted**
+3. Countries with higher internet penetration rates have better-ranked universities -- *Support* **
+4. Higher female participation in the labor force is associated with better university rankings in a country. -- **Not Defined**
 5. Countries with higher government expenditure on education as a percentage of GDP have more universities in the top 100 -- **Refuted**
 
 
