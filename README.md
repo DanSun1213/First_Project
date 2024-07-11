@@ -75,7 +75,7 @@ def plot_graph_edu_ranked_uni(final_df):
 
 ```
 
-![](/First_Project/Pictures/2.png)
+![](/Pictures/2.png)
 
 
 ## Findings
