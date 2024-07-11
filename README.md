@@ -21,15 +21,17 @@ This repository contains a Jupyter notebook (main.ipynb) that collects and proce
 2. **Country Statistics - UNData**: <https://www.kaggle.com/datasets/sudalairajkumar/undata-country-profiles>
 
 **Import library code:**
-`import pandas as pd`
-`import plotly.io as pio`
-`import plotly.express as px`
-`from helper_functions import uninversity_data_cleaning, country_data_cleaning, merge_dataset, clean_data_dan, plot_graph_edu_ranked_uni`
-
+``` python
+import pandas as pd
+import plotly.io as pio
+import plotly.express as px
+from helper_functions import uninversity_data_cleaning, country_data_cleaning, merge_dataset, clean_data_dan, plot_graph_edu_ranked_uni
+```
 **Read dataset code:**
-`df_uni = pd.read_csv(r'qs-world-university-rankings-2017-to-2022-V2.csv')`
-`country_profile = pd.read_csv('country_profile_variables.csv')`
-
+``` python
+df_uni = pd.read_csv(r'qs-world-university-rankings-2017-to-2022-V2.csv')
+country_profile = pd.read_csv('country_profile_variables.csv')
+```
 ## Data Cleaning
 Starting by individually cleaning each dataset. This ensures that each dataset is free from initial inconsistencies before merging.
 
@@ -87,7 +89,7 @@ def plot_graph_edu_ranked_uni(final_df):
 
 - Python = 3.12.4
 - pandas = 2.2.2
-- plotly.io = = 3.2.1
+- plotly.io = 3.2.1
 
 ## Contributing
 
