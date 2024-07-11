@@ -25,17 +25,17 @@ country_profile = pd.read_csv('country_profile_variables.csv')
 ## Data Cleaning
 Starting by individually cleaning each dataset. This ensures that each dataset is free from initial inconsistencies before merging.
 
-df_2017 = uninversity_data_cleaning(df_uni)
-df_2017.head()
+`df_2017 = uninversity_data_cleaning(df_uni)`
+`df_2017.head()`
 
-country_profile = country_data_cleaning(country_profile)
-country_profile.head()
+`country_profile = country_data_cleaning(country_profile)`
+`country_profile.head()`
 
 ## Merging Datasets
 Once the individual datasets are cleaned, we merge them into a single dataset. This is done based on common keys or identifiers that exist in both datasets.
 
-new_df = merge_dataset(df_2017, country_profile, key='country')
-new_df.head()
+`new_df = merge_dataset(df_2017, country_profile, key='country')`
+`new_df.head()`
 
 ## Hypothesis-Based Cleaning:
 fter merging, we perform a second round of cleaning based on our analysis hypotheses. This step ensures that the data is tailored to answer the specific questions we are investigating.
