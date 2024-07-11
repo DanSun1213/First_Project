@@ -77,7 +77,6 @@ def plot_graph_edu_ranked_uni(final_df):
 ![](/First_Project/Pictures/newplot.png)
 
 
-
 ## Findings
 
 1. Countries with higher GDP growth rates tend to have higher-ranked universities. -- ** **
@@ -96,3 +95,6 @@ def plot_graph_edu_ranked_uni(final_df):
 ## Contributing
 
 Feel free to open issues or submit pull requests if you have any improvements or suggestions.
+
+
+[def]: /First_Project/Pictures/1.png
